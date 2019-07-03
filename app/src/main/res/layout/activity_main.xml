@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,42 +10,61 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="221dp"
+        android:layout_height="33dp"
         android:text="User Login"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="152dp" />
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="94dp" />
 
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="215dp"
+        android:layout_height="21dp"
+        android:text="User Name"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="160dp"
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_marginTop="116dp"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="189dp" />
 
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="211dp"
+        android:layout_height="26dp"
+        android:text="Password"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="265dp"
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editText"
-        android:layout_marginTop="119dp"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="301dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editText3"
-        android:layout_marginTop="144dp"
+        android:layout_margin="100dp"
+        android:padding="50px"
         android:text="Log In"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="370dp"
-        android:padding="50px"
-        android:layout_margin="100dp"/>
-</RelativeLayout>
+        tools:layout_editor_absoluteY="377dp" />
+
+</android.support.constraint.ConstraintLayout>
